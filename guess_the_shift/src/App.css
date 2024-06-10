@@ -1,0 +1,73 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: cadetblue;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 80%;
+  gap: 20px;
+}
+
+.column.left {
+  grid-column: span 4;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: inherit;
+  font-weight: bolder;
+}
+
+.column.right {
+  grid-column: span 8;
+  border: 2px solid black; /* Add border */
+  border-radius: 10px; /* Optional: to smooth out the corners */
+  padding: 20px; /* Optional: to add some space inside the border */
+  background-color: white; /* Optional: to give it a distinct background */
+}
+
+form {
+  margin: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  background-color:brown;
+  color: white; /* Added for better readability */
+  border: none; /* Removed default border */
+  border-radius: 5%; /* Adjusted for better appearance */
+  box-shadow: 0 5px black; /* Adjusted box-shadow */
+}
+
+.exit-button {
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px; /* Added padding */
+  border-radius: 5%; /* Added border-radius */
+  cursor: pointer; /* Added cursor pointer */
+}
+
+h2 {
+  margin: 20px;
+}
+.bold{
+  font-size: large;
+  font-weight: bold;
+}
